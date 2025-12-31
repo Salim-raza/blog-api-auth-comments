@@ -54,7 +54,7 @@ A Blog Backend API built with Django Rest Framework including authentication, po
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/your-username/drf-blog-api.git
+git clone https://github.com/Salim-raza/blog-api-auth-comments.git
 cd drf-blog-api
 python -m venv venv
 source venv/bin/activate
