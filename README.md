@@ -1,4 +1,4 @@
-# DRF Blog API
+# DRF Blog API With Comments
 
 A Blog Backend API built with Django Rest Framework including authentication, posts, comments and limited category creation.
 
