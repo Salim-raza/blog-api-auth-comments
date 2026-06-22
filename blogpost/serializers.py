@@ -13,6 +13,7 @@ class CategorySerializers(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = '__all__'
+        read_only_fields = ["create_at", "update_at"]
         
 class PostUpdateSerializers(serializers.ModelSerializer):
     class Meta:
