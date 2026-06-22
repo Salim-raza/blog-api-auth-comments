@@ -6,7 +6,7 @@ class PostCreateSerializers(serializers.ModelSerializer):
     class Meta:
         model = Post
         fields = '__all__'
-        read_only_fields = ["author"]
+        read_only_fields = ["author", "create_at", "update_at"]
         
 
 class CategorySerializers(serializers.ModelSerializer):
