@@ -4,6 +4,8 @@ from django.conf import settings
 # Create your models here.
 class Category(models.Model):
     name = models.CharField(max_length=100, null=True, blank=True)
+    create_at = models.DateTimeField(auto_now_add=True)
+    update_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.name or "Unnamed Category"
