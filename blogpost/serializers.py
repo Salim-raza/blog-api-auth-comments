@@ -30,7 +30,7 @@ class CommentSerializers(serializers.ModelSerializer):
     user_name = serializers.CharField(source="user.email", read_only=True)
     class Meta:
         model = Comment
-        fields = ["id", "post", "user", "user_name", "content", "created_at", "updated_at"]
+        fields = ["post", "user", "user_name", "content", "created_at", "updated_at"]
         read_only_fields = ["user", "post"]
         
 class CommentUpdateSerializers(serializers.Serializer):
